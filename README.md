@@ -1,0 +1,1 @@
+# C Extended String Library
