@@ -21,12 +21,19 @@ There are two different ways you can include this library in your project: manua
 An overview of the functions provided in this library is provided below. You can find the full project documentation [on my website](https://samgerstner.pro/docs/c-extended-string).
 
 `int compareStrings(const char *leftStr, const char *rightStr);`
+
 `char *concatenateString(const char *destStr, const char *sourceStr);`
+
 `void copyString(char *destStr, const char *sourceStr);`
+
 `int findSubString(const char *testStr, const char *searchStr);`
+
 `int getStringLength(const char *testStr);`
+
 `char *getSubString(const char *sourceStr, int startIndex, int endIndex);`
+
 `char *stringToLowerCase(const char *sourceStr);`
+
 `char charToLower(char testChar);`
 
 ## Credits
