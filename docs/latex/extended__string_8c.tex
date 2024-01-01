@@ -1,0 +1,166 @@
+\hypertarget{extended__string_8c}{}\doxysection{src/extended\+\_\+string.c File Reference}
+\label{extended__string_8c}\index{src/extended\_string.c@{src/extended\_string.c}}
+{\ttfamily \#include \char`\"{}extended\+\_\+string.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{extended__string_8c_a13b61b27617b53d1ba81801ffe5aa0b8}{compare\+Strings}} (const char $\ast$left\+Str, const char $\ast$right\+Str)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8c_ad24465eca3e37e2e39676edb745d44e8}{concatenate\+String}} (const char $\ast$dest\+Str, const char $\ast$source\+Str)
+\item 
+void \mbox{\hyperlink{extended__string_8c_a431a67644f21b6ec5a2f0c0b10c8eb5f}{copy\+String}} (char $\ast$dest\+Str, const char $\ast$source\+Str)
+\item 
+int \mbox{\hyperlink{extended__string_8c_a7350037f509bae8f01e21577f82c7557}{find\+Sub\+String}} (const char $\ast$test\+Str, const char $\ast$search\+Str)
+\item 
+int \mbox{\hyperlink{extended__string_8c_a522ba33779f604c3d83f093a76a343bc}{get\+String\+Length}} (const char $\ast$test\+Str)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8c_a113a00aa1c072478caf0744e04656511}{get\+Sub\+String}} (const char $\ast$source\+Str, int start\+Index, int end\+Index)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8c_add645a3eed6bd319e3f17e4df980c889}{string\+To\+Lower\+Case}} (const char $\ast$source\+Str)
+\item 
+char \mbox{\hyperlink{extended__string_8c_a2c0cb8e55e11dbf1351fe0e26707b869}{char\+To\+Lower}} (char test\+Char)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{extended__string_8c_a2c0cb8e55e11dbf1351fe0e26707b869}\label{extended__string_8c_a2c0cb8e55e11dbf1351fe0e26707b869}} 
+\index{extended\_string.c@{extended\_string.c}!charToLower@{charToLower}}
+\index{charToLower@{charToLower}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{charToLower()}{charToLower()}}
+{\footnotesize\ttfamily char char\+To\+Lower (\begin{DoxyParamCaption}\item[{char}]{test\+Char }\end{DoxyParamCaption})}
+
+Converts character to lower case (if it is a letter).
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Char} & Character to conert to lower case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char Lower case character if character was upper case, un-\/modified character otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_a13b61b27617b53d1ba81801ffe5aa0b8}\label{extended__string_8c_a13b61b27617b53d1ba81801ffe5aa0b8}} 
+\index{extended\_string.c@{extended\_string.c}!compareStrings@{compareStrings}}
+\index{compareStrings@{compareStrings}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{compareStrings()}{compareStrings()}}
+{\footnotesize\ttfamily int compare\+Strings (\begin{DoxyParamCaption}\item[{const char $\ast$}]{left\+Str,  }\item[{const char $\ast$}]{right\+Str }\end{DoxyParamCaption})}
+
+Compares two strings and returns an integer value based on the comparison.
+
+Compares two strings with the following results\+: If left string less than right string, returns less than zero If left string greater than right string, return greater than zero If left string equals right string, returns zero (equals test includes length)
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Str} & The first of two strings to compare. \\
+\hline
+{\em right\+Str} & The second of two strings to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Integer result of comparison as specified. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_ad24465eca3e37e2e39676edb745d44e8}\label{extended__string_8c_ad24465eca3e37e2e39676edb745d44e8}} 
+\index{extended\_string.c@{extended\_string.c}!concatenateString@{concatenateString}}
+\index{concatenateString@{concatenateString}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{concatenateString()}{concatenateString()}}
+{\footnotesize\ttfamily char $\ast$ concatenate\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dest\+Str,  }\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Appends one string onto the end of another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Str} & The string to appended onto. \\
+\hline
+{\em source\+Str} & The string to be appended.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ The concatenated string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_a431a67644f21b6ec5a2f0c0b10c8eb5f}\label{extended__string_8c_a431a67644f21b6ec5a2f0c0b10c8eb5f}} 
+\index{extended\_string.c@{extended\_string.c}!copyString@{copyString}}
+\index{copyString@{copyString}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{copyString()}{copyString()}}
+{\footnotesize\ttfamily void copy\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{dest\+Str,  }\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Copies one string into another, overwriting data in the destination string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Str} & The string that will be copied into. \\
+\hline
+{\em source\+Str} & The string to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{extended__string_8c_a7350037f509bae8f01e21577f82c7557}\label{extended__string_8c_a7350037f509bae8f01e21577f82c7557}} 
+\index{extended\_string.c@{extended\_string.c}!findSubString@{findSubString}}
+\index{findSubString@{findSubString}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{findSubString()}{findSubString()}}
+{\footnotesize\ttfamily int find\+Sub\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{test\+Str,  }\item[{const char $\ast$}]{search\+Str }\end{DoxyParamCaption})}
+
+Linear search for given substring within another string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Str} & The string that will be scanned for the sub-\/string. \\
+\hline
+{\em search\+Str} & The sub-\/string to search for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index of the substring, or -\/1 if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_a522ba33779f604c3d83f093a76a343bc}\label{extended__string_8c_a522ba33779f604c3d83f093a76a343bc}} 
+\index{extended\_string.c@{extended\_string.c}!getStringLength@{getStringLength}}
+\index{getStringLength@{getStringLength}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{getStringLength()}{getStringLength()}}
+{\footnotesize\ttfamily int get\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{test\+Str }\end{DoxyParamCaption})}
+
+Gets string length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Str} & String to get the length of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Length of string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_a113a00aa1c072478caf0744e04656511}\label{extended__string_8c_a113a00aa1c072478caf0744e04656511}} 
+\index{extended\_string.c@{extended\_string.c}!getSubString@{getSubString}}
+\index{getSubString@{getSubString}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{getSubString()}{getSubString()}}
+{\footnotesize\ttfamily char $\ast$ get\+Sub\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source\+Str,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})}
+
+Returns sub-\/string between specified indices.
+
+Returns a sub-\/string of source\+Str between start\+Index and end\+Index, inclusive. If an invalid index combination is provided, returns NULL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Str} & The string that you want to take a sub-\/string of. \\
+\hline
+{\em start\+Index} & Starting index of sub-\/string. \\
+\hline
+{\em end\+Index} & Ending index of sub-\/string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The sub-\/string as specified. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8c_add645a3eed6bd319e3f17e4df980c889}\label{extended__string_8c_add645a3eed6bd319e3f17e4df980c889}} 
+\index{extended\_string.c@{extended\_string.c}!stringToLowerCase@{stringToLowerCase}}
+\index{stringToLowerCase@{stringToLowerCase}!extended\_string.c@{extended\_string.c}}
+\doxysubsubsection{\texorpdfstring{stringToLowerCase()}{stringToLowerCase()}}
+{\footnotesize\ttfamily char $\ast$ string\+To\+Lower\+Case (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Converts a string to all lower-\/case letters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Str} & String to convert to lower-\/case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string All lower-\/case version of source\+Str. 
+\end{DoxyReturn}
