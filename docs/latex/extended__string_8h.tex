@@ -1,0 +1,284 @@
+\hypertarget{extended__string_8h}{}\doxysection{src/extended\+\_\+string.h File Reference}
+\label{extended__string_8h}\index{src/extended\_string.h@{src/extended\_string.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_ae920d68bf98c6bb1302fdda0f28f5ff1}{NULL\+\_\+\+CHAR}}~\textquotesingle{}\textbackslash{}0\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_af05fbe3f7666f4c5e2131431cb62a6be}{SPACE\+\_\+\+CHAR}}~\textquotesingle{} \textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_ac8208b59534f704e1fa5568709457154}{NON\+\_\+\+PRINTABLE\+\_\+\+CHAR}}~(char)127
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_aa2f49001be13949a16a57e6c99ab00ad}{COMMA}}~\textquotesingle{},\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_a8301ee0d0b0055ebb4e8ecc46fadd69e}{COLON}}~\textquotesingle{}\+:\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_af281425e62298bac2df0fbe8690a4844}{PERIOD}}~\textquotesingle{}.\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_ae6402f35ea263d89cb367e0ab2b0f278}{SEMICOLON}}~\textquotesingle{};\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_a597ffae5d0832c505503b0eaf3a571c0}{MIN\+\_\+\+STR\+\_\+\+LEN}}~2
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_a58ce36916c399104e18d32ff090f21c6}{MAX\+\_\+\+STR\+\_\+\+LEN}}~2048
+\item 
+\#define \mbox{\hyperlink{extended__string_8h_a0f4c861e215a211927b2ac26037b3426}{STD\+\_\+\+STR\+\_\+\+LEN}}~64
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5e}{String\+Manipulation\+Code}} \{ \mbox{\hyperlink{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5eabf350750d0d4fabd8954c0f1e9bbae94}{NO\+\_\+\+ERROR}}
+, \mbox{\hyperlink{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea5bd12c3506a0cd6b0b44e585a62d09bc}{INVALID\+\_\+\+FILE\+\_\+\+NAME}}
+, \mbox{\hyperlink{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea02c0609d52c0697afa8f89ad610533ef}{INPUT\+\_\+\+BUFFER\+\_\+\+OVERLOAD}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{extended__string_8h_a13b61b27617b53d1ba81801ffe5aa0b8}{compare\+Strings}} (const char $\ast$left\+Str, const char $\ast$right\+Str)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8h_ad24465eca3e37e2e39676edb745d44e8}{concatenate\+String}} (const char $\ast$dest\+Str, const char $\ast$source\+Str)
+\item 
+void \mbox{\hyperlink{extended__string_8h_a431a67644f21b6ec5a2f0c0b10c8eb5f}{copy\+String}} (char $\ast$dest\+Str, const char $\ast$source\+Str)
+\item 
+int \mbox{\hyperlink{extended__string_8h_a7350037f509bae8f01e21577f82c7557}{find\+Sub\+String}} (const char $\ast$test\+Str, const char $\ast$search\+Str)
+\item 
+int \mbox{\hyperlink{extended__string_8h_a522ba33779f604c3d83f093a76a343bc}{get\+String\+Length}} (const char $\ast$test\+Str)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8h_a113a00aa1c072478caf0744e04656511}{get\+Sub\+String}} (const char $\ast$source\+Str, int start\+Index, int end\+Index)
+\item 
+char $\ast$ \mbox{\hyperlink{extended__string_8h_add645a3eed6bd319e3f17e4df980c889}{string\+To\+Lower\+Case}} (const char $\ast$source\+Str)
+\item 
+char \mbox{\hyperlink{extended__string_8h_a2c0cb8e55e11dbf1351fe0e26707b869}{char\+To\+Lower}} (char test\+Char)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{extended__string_8h_a8301ee0d0b0055ebb4e8ecc46fadd69e}\label{extended__string_8h_a8301ee0d0b0055ebb4e8ecc46fadd69e}} 
+\index{extended\_string.h@{extended\_string.h}!COLON@{COLON}}
+\index{COLON@{COLON}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{COLON}{COLON}}
+{\footnotesize\ttfamily \#define COLON~\textquotesingle{}\+:\textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_aa2f49001be13949a16a57e6c99ab00ad}\label{extended__string_8h_aa2f49001be13949a16a57e6c99ab00ad}} 
+\index{extended\_string.h@{extended\_string.h}!COMMA@{COMMA}}
+\index{COMMA@{COMMA}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{COMMA}{COMMA}}
+{\footnotesize\ttfamily \#define COMMA~\textquotesingle{},\textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_a58ce36916c399104e18d32ff090f21c6}\label{extended__string_8h_a58ce36916c399104e18d32ff090f21c6}} 
+\index{extended\_string.h@{extended\_string.h}!MAX\_STR\_LEN@{MAX\_STR\_LEN}}
+\index{MAX\_STR\_LEN@{MAX\_STR\_LEN}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_STR\_LEN}{MAX\_STR\_LEN}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+STR\+\_\+\+LEN~2048}
+
+\mbox{\Hypertarget{extended__string_8h_a597ffae5d0832c505503b0eaf3a571c0}\label{extended__string_8h_a597ffae5d0832c505503b0eaf3a571c0}} 
+\index{extended\_string.h@{extended\_string.h}!MIN\_STR\_LEN@{MIN\_STR\_LEN}}
+\index{MIN\_STR\_LEN@{MIN\_STR\_LEN}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_STR\_LEN}{MIN\_STR\_LEN}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+STR\+\_\+\+LEN~2}
+
+\mbox{\Hypertarget{extended__string_8h_ac8208b59534f704e1fa5568709457154}\label{extended__string_8h_ac8208b59534f704e1fa5568709457154}} 
+\index{extended\_string.h@{extended\_string.h}!NON\_PRINTABLE\_CHAR@{NON\_PRINTABLE\_CHAR}}
+\index{NON\_PRINTABLE\_CHAR@{NON\_PRINTABLE\_CHAR}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{NON\_PRINTABLE\_CHAR}{NON\_PRINTABLE\_CHAR}}
+{\footnotesize\ttfamily \#define NON\+\_\+\+PRINTABLE\+\_\+\+CHAR~(char)127}
+
+\mbox{\Hypertarget{extended__string_8h_ae920d68bf98c6bb1302fdda0f28f5ff1}\label{extended__string_8h_ae920d68bf98c6bb1302fdda0f28f5ff1}} 
+\index{extended\_string.h@{extended\_string.h}!NULL\_CHAR@{NULL\_CHAR}}
+\index{NULL\_CHAR@{NULL\_CHAR}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{NULL\_CHAR}{NULL\_CHAR}}
+{\footnotesize\ttfamily \#define NULL\+\_\+\+CHAR~\textquotesingle{}\textbackslash{}0\textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_af281425e62298bac2df0fbe8690a4844}\label{extended__string_8h_af281425e62298bac2df0fbe8690a4844}} 
+\index{extended\_string.h@{extended\_string.h}!PERIOD@{PERIOD}}
+\index{PERIOD@{PERIOD}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{PERIOD}{PERIOD}}
+{\footnotesize\ttfamily \#define PERIOD~\textquotesingle{}.\textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_ae6402f35ea263d89cb367e0ab2b0f278}\label{extended__string_8h_ae6402f35ea263d89cb367e0ab2b0f278}} 
+\index{extended\_string.h@{extended\_string.h}!SEMICOLON@{SEMICOLON}}
+\index{SEMICOLON@{SEMICOLON}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{SEMICOLON}{SEMICOLON}}
+{\footnotesize\ttfamily \#define SEMICOLON~\textquotesingle{};\textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_af05fbe3f7666f4c5e2131431cb62a6be}\label{extended__string_8h_af05fbe3f7666f4c5e2131431cb62a6be}} 
+\index{extended\_string.h@{extended\_string.h}!SPACE\_CHAR@{SPACE\_CHAR}}
+\index{SPACE\_CHAR@{SPACE\_CHAR}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{SPACE\_CHAR}{SPACE\_CHAR}}
+{\footnotesize\ttfamily \#define SPACE\+\_\+\+CHAR~\textquotesingle{} \textquotesingle{}}
+
+\mbox{\Hypertarget{extended__string_8h_a0f4c861e215a211927b2ac26037b3426}\label{extended__string_8h_a0f4c861e215a211927b2ac26037b3426}} 
+\index{extended\_string.h@{extended\_string.h}!STD\_STR\_LEN@{STD\_STR\_LEN}}
+\index{STD\_STR\_LEN@{STD\_STR\_LEN}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{STD\_STR\_LEN}{STD\_STR\_LEN}}
+{\footnotesize\ttfamily \#define STD\+\_\+\+STR\+\_\+\+LEN~64}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5e}\label{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5e}} 
+\index{extended\_string.h@{extended\_string.h}!StringManipulationCode@{StringManipulationCode}}
+\index{StringManipulationCode@{StringManipulationCode}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{StringManipulationCode}{StringManipulationCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5e}{String\+Manipulation\+Code}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ERROR@{NO\_ERROR}!extended\_string.h@{extended\_string.h}}\index{extended\_string.h@{extended\_string.h}!NO\_ERROR@{NO\_ERROR}}}\mbox{\Hypertarget{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5eabf350750d0d4fabd8954c0f1e9bbae94}\label{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5eabf350750d0d4fabd8954c0f1e9bbae94}} 
+NO\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_FILE\_NAME@{INVALID\_FILE\_NAME}!extended\_string.h@{extended\_string.h}}\index{extended\_string.h@{extended\_string.h}!INVALID\_FILE\_NAME@{INVALID\_FILE\_NAME}}}\mbox{\Hypertarget{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea5bd12c3506a0cd6b0b44e585a62d09bc}\label{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea5bd12c3506a0cd6b0b44e585a62d09bc}} 
+INVALID\+\_\+\+FILE\+\_\+\+NAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INPUT\_BUFFER\_OVERLOAD@{INPUT\_BUFFER\_OVERLOAD}!extended\_string.h@{extended\_string.h}}\index{extended\_string.h@{extended\_string.h}!INPUT\_BUFFER\_OVERLOAD@{INPUT\_BUFFER\_OVERLOAD}}}\mbox{\Hypertarget{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea02c0609d52c0697afa8f89ad610533ef}\label{extended__string_8h_ac08ffbad94dd9c97b890d88612dd7e5ea02c0609d52c0697afa8f89ad610533ef}} 
+INPUT\+\_\+\+BUFFER\+\_\+\+OVERLOAD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{extended__string_8h_a2c0cb8e55e11dbf1351fe0e26707b869}\label{extended__string_8h_a2c0cb8e55e11dbf1351fe0e26707b869}} 
+\index{extended\_string.h@{extended\_string.h}!charToLower@{charToLower}}
+\index{charToLower@{charToLower}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{charToLower()}{charToLower()}}
+{\footnotesize\ttfamily char char\+To\+Lower (\begin{DoxyParamCaption}\item[{char}]{test\+Char }\end{DoxyParamCaption})}
+
+Converts character to lower case (if it is a letter).
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Char} & Character to conert to lower case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char Lower case character if character was upper case, un-\/modified character otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_a13b61b27617b53d1ba81801ffe5aa0b8}\label{extended__string_8h_a13b61b27617b53d1ba81801ffe5aa0b8}} 
+\index{extended\_string.h@{extended\_string.h}!compareStrings@{compareStrings}}
+\index{compareStrings@{compareStrings}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{compareStrings()}{compareStrings()}}
+{\footnotesize\ttfamily int compare\+Strings (\begin{DoxyParamCaption}\item[{const char $\ast$}]{left\+Str,  }\item[{const char $\ast$}]{right\+Str }\end{DoxyParamCaption})}
+
+Compares two strings and returns an integer value based on the comparison.
+
+Compares two strings with the following results\+: If left string less than right string, returns less than zero If left string greater than right string, return greater than zero If left string equals right string, returns zero (equals test includes length)
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Str} & The first of two strings to compare. \\
+\hline
+{\em right\+Str} & The second of two strings to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Integer result of comparison as specified. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_ad24465eca3e37e2e39676edb745d44e8}\label{extended__string_8h_ad24465eca3e37e2e39676edb745d44e8}} 
+\index{extended\_string.h@{extended\_string.h}!concatenateString@{concatenateString}}
+\index{concatenateString@{concatenateString}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{concatenateString()}{concatenateString()}}
+{\footnotesize\ttfamily char $\ast$ concatenate\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dest\+Str,  }\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Appends one string onto the end of another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Str} & The string to appended onto. \\
+\hline
+{\em source\+Str} & The string to be appended.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ The concatenated string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_a431a67644f21b6ec5a2f0c0b10c8eb5f}\label{extended__string_8h_a431a67644f21b6ec5a2f0c0b10c8eb5f}} 
+\index{extended\_string.h@{extended\_string.h}!copyString@{copyString}}
+\index{copyString@{copyString}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{copyString()}{copyString()}}
+{\footnotesize\ttfamily void copy\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{dest\+Str,  }\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Copies one string into another, overwriting data in the destination string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Str} & The string that will be copied into. \\
+\hline
+{\em source\+Str} & The string to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{extended__string_8h_a7350037f509bae8f01e21577f82c7557}\label{extended__string_8h_a7350037f509bae8f01e21577f82c7557}} 
+\index{extended\_string.h@{extended\_string.h}!findSubString@{findSubString}}
+\index{findSubString@{findSubString}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{findSubString()}{findSubString()}}
+{\footnotesize\ttfamily int find\+Sub\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{test\+Str,  }\item[{const char $\ast$}]{search\+Str }\end{DoxyParamCaption})}
+
+Linear search for given substring within another string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Str} & The string that will be scanned for the sub-\/string. \\
+\hline
+{\em search\+Str} & The sub-\/string to search for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index of the substring, or -\/1 if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_a522ba33779f604c3d83f093a76a343bc}\label{extended__string_8h_a522ba33779f604c3d83f093a76a343bc}} 
+\index{extended\_string.h@{extended\_string.h}!getStringLength@{getStringLength}}
+\index{getStringLength@{getStringLength}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{getStringLength()}{getStringLength()}}
+{\footnotesize\ttfamily int get\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{test\+Str }\end{DoxyParamCaption})}
+
+Gets string length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Str} & String to get the length of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Length of string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_a113a00aa1c072478caf0744e04656511}\label{extended__string_8h_a113a00aa1c072478caf0744e04656511}} 
+\index{extended\_string.h@{extended\_string.h}!getSubString@{getSubString}}
+\index{getSubString@{getSubString}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{getSubString()}{getSubString()}}
+{\footnotesize\ttfamily char $\ast$ get\+Sub\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source\+Str,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})}
+
+Returns sub-\/string between specified indices.
+
+Returns a sub-\/string of source\+Str between start\+Index and end\+Index, inclusive. If an invalid index combination is provided, returns NULL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Str} & The string that you want to take a sub-\/string of. \\
+\hline
+{\em start\+Index} & Starting index of sub-\/string. \\
+\hline
+{\em end\+Index} & Ending index of sub-\/string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The sub-\/string as specified. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__string_8h_add645a3eed6bd319e3f17e4df980c889}\label{extended__string_8h_add645a3eed6bd319e3f17e4df980c889}} 
+\index{extended\_string.h@{extended\_string.h}!stringToLowerCase@{stringToLowerCase}}
+\index{stringToLowerCase@{stringToLowerCase}!extended\_string.h@{extended\_string.h}}
+\doxysubsubsection{\texorpdfstring{stringToLowerCase()}{stringToLowerCase()}}
+{\footnotesize\ttfamily char $\ast$ string\+To\+Lower\+Case (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source\+Str }\end{DoxyParamCaption})}
+
+Converts a string to all lower-\/case letters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Str} & String to convert to lower-\/case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string All lower-\/case version of source\+Str. 
+\end{DoxyReturn}
